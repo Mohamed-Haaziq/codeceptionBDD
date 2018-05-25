@@ -1,0 +1,27 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+#actor: AcceptanceTester
+#modules:
+   #    enabled:
+   #       - WebDriver:
+   #          url: ’http://buzz.stage.trivago.trv/'
+  #           window_size: false # disabled in ChromeDriver
+   #          port: 4444
+    #         browser: chrome
+     #        capabilities:
+     #            chromeOptions: # additional chrome options
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: http://room5.trivago.com/
+            browser: chrome
+            window_size: maximize
+            clear_cookies: false
+            capabilities:
+              webStorageEnabled: true
+        - \Helper\Acceptance
