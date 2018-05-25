@@ -7,7 +7,7 @@ class DBfunctions extends \AcceptanceTester
 {
     private function connectToDB($dbName)
     {
-        $_rDb = mysqli_connect('10.1.5.151', 'hhamza', 'h!QJyr@f2tc9', $dbName);
+        $_rDb = mysqli_connect('pop703qatrial.cvbonft0novs.eu-west-1.rds.amazonaws.com', 'marsapplicant', 'Mars@trivago2018', $dbName);
         if (mysqli_connect_errno()) {
             var_dump("Connection failed: %s\n", mysqli_connect_error());
             exit();

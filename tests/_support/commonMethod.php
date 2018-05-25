@@ -9,7 +9,7 @@ class commonMethod extends \AcceptanceTester
 {
     public function readXML($filePath, $parentTag, $childTag, $attributeName)
     {
-        //$XMLFile="tests/acceptance/resource/producetStatus.xml";
+        //$XMLFile="tests/acceptance/resource/articleStatus.xml";
         $XMLFile = $filePath;
 
         $xmlstr = simplexml_load_file($XMLFile);
