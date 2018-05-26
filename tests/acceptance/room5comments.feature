@@ -1,6 +1,6 @@
 Feature: room5 redirect comments
 
-  Scenario: 01 - room5 test ading comments functionality
+  Scenario: 01 - room5 test adding comments functionality
 
     Given user view room5
     Then verify the availability of the application

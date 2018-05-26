@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="room5search.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="room5search.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/acceptance/room5search.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room5comments.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="room5comments.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/acceptance/room5comments.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -173,7 +173,6 @@
         <option value="$PROJECT_DIR$/tests/acceptance/room5Navigation.feature" />
         <option value="$PROJECT_DIR$/tests/acceptance/room5redirectToTrivago.feature" />
         <option value="$PROJECT_DIR$/codeception.yml" />
-        <option value="$PROJECT_DIR$/tests/acceptance/room5comments.feature" />
         <option value="$PROJECT_DIR$/tests/_support/ContextRoom5Search.php" />
         <option value="$PROJECT_DIR$/tests/_support/ContextRoom5ContactForm.php" />
         <option value="$PROJECT_DIR$/tests/_support/ContextRoom5subscribe.php" />
@@ -184,6 +183,7 @@
         <option value="$PROJECT_DIR$/tests/_support/DBfunctions.php" />
         <option value="$PROJECT_DIR$/tests/_support/ContextRoom5redirectToTrivago.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/room5search.feature" />
+        <option value="$PROJECT_DIR$/tests/acceptance/room5comments.feature" />
       </list>
     </option>
   </component>
@@ -292,13 +292,6 @@
               <item name="challengeTrivago" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_support" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="challengeTrivago" type="b2602c69:ProjectViewProjectNode" />
-              <item name="challengeTrivago" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_support" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="configs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="challengeTrivago" type="b2602c69:ProjectViewProjectNode" />
@@ -484,7 +477,7 @@
       <workItem from="1527174900050" duration="922000" />
       <workItem from="1527176011006" duration="7688000" />
       <workItem from="1527215901097" duration="11070000" />
-      <workItem from="1527243215867" duration="15410000" />
+      <workItem from="1527243215867" duration="16564000" />
     </task>
     <servers />
   </component>
@@ -494,7 +487,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487635000" />
+    <option name="totallyTimeSpent" value="488789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -744,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/acceptance/room5comments.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/acceptance/room5ContactForm.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -788,6 +773,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/acceptance/room5comments.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding />
         </state>
       </provider>
