@@ -55,7 +55,8 @@ class ContextRoom5redirectToTrivago extends \AcceptanceTester
     {
         codecept_debug(self::$firstHotelNameInArticle);
         $this->switchToNextTab();
-        $this->wait(10);
+        $this->wait(15);
+        $this->waitForElementVisible(objectMap::$hotelNameInTrivago);
         $hotelNameInsearchBar=$this->grabTextFrom(objectMap::$hotelNameInTrivago);
 
         if ($hotelNameInsearchBar == self::$firstHotelNameInArticle)

@@ -5,7 +5,7 @@ Feature: room5 search
       Given user view room5
       Then verify the availability of the application
       When user click on search icon
-      And user type "USA" in the search bar
+      And user type "Sri Lanka" in the search bar
       And press enter
       Then user should be able to see related articles
 

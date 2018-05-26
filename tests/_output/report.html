@@ -212,10 +212,10 @@ var showAll = true;
         <a href="#" title="Show all" onclick="showAllScenarios()">◯</a>
       </li>
       <li>
-        <a href="#" title="Successful" onclick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 0</a>
+        <a href="#" title="Successful" onclick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a>
       </li>
       <li>
-        <a href="#" title="Failed" onclick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 1</a>
+        <a href="#" title="Failed" onclick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a>
       </li>
       <li>
         <a href="#" title="Skipped" onclick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a>
@@ -226,7 +226,7 @@ var showAll = true;
     </ul>
     <div class="layout">
       <h1>
-        Codeception Results <small><span style="color: #e74c3c">FAILED</span> (29.3s)</small>
+        Codeception Results <small><span style="color: green">OK</span> (56.3s)</small>
       </h1>
       <table border="0" style="width: 100%;">
         <tr>
@@ -236,16 +236,16 @@ var showAll = true;
             </h3>
           </td>
         </tr>
-        <tr class="scenarioRow scenarioFailed">
+        <tr class="scenarioRow scenarioSuccess">
           <td>
-            <p class="scenarioFailed" onclick="showHide('1', this)">
-              <span class="toggle">+</span> <span class="quiet">Room5 redirect to trivago »</span> 01 - room5 redirect to trivago from first article in editor's pick <span style="color: #34495e; font-size: 70%;">29.31s</span>
+            <p class="scenarioSuccess" onclick="showHide('1', this)">
+              <span class="toggle">+</span> <span class="quiet">Room5 redirect to trivago »</span> 01 - room5 redirect to trivago from first article in editor's pick <span style="color: #34495e; font-size: 70%;">56.31s</span>
             </p>
           </td>
         </tr>
-        <tr class="scenarioRow scenarioFailed">
+        <tr class="scenarioRow scenarioSuccess">
           <td>
-            <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer1">
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
               <tr>
                 <td class="stepName">
                   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -253,14 +253,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b082a5c7848b', this)">
+                  <p onclick="showHide('5b084febb3163', this)">
                     <span class="toggle">+</span> Given user view room5
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c7848b">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb3163">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -281,14 +281,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b082a5c7854a', this)">
+                  <p onclick="showHide('5b084febb31b5', this)">
                     <span class="toggle">+</span> Then verify the availability of the application
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c7854a">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb31b5">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -304,14 +304,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b082a5c78633', this)">
+                  <p onclick="showHide('5b084febb31f3', this)">
                     <span class="toggle">+</span> When user click on main article in editors pick
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c78633">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb31f3">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -332,14 +332,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b082a5c786ad', this)">
+                  <p onclick="showHide('5b084febb3230', this)">
                     <span class="toggle">+</span> Then user should be redirected to correct article
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c786ad">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb3230">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -360,14 +360,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b082a5c78721', this)">
+                  <p onclick="showHide('5b084febb326e', this)">
                     <span class="toggle">+</span> When user click on first view resort button in the article
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c78721">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb326e">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -392,15 +392,15 @@ var showAll = true;
                 </td>
               </tr>
               <tr>
-                <td class="stepName failedStep">
-                  <p onclick="showHide('5b082a5c787a3', this)">
+                <td class="stepName">
+                  <p onclick="showHide('5b084febb32af', this)">
                     <span class="toggle">+</span> Then user should be redirected to correct hotel in trivago search page
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b082a5c787a3">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb32af">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -413,32 +413,20 @@ var showAll = true;
                     </tr>
                     <tr>
                       <td class="stepName">
-                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">10</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">15</span>
                       </td>
                     </tr>
                     <tr>
-                      <td class="stepName failedStep">
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//h3[@class='name__copytext m-0 item__slideout-toggle']"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">"//h3[@class='name__copytext m-0 item__slideout-toggle']"</span>
                       </td>
                     </tr>
                   </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="error">
-                  CSS or XPath or Regex element with '//h3[@class='name__copytext m-0 item__slideout-toggle']' was not found.
-                </td>
-              </tr>
-              <tr>
-                <td class='error'>
-                  <div class='screenshot'>
-                    <img src='room5redirectToTrivago.01...room5.redirect.to.trivago.from.first.article.in.editor.s.pick.fail.png' alt='failure screenshot'>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class='error'>
-                  See <a href='room5redirectToTrivago.01...room5.redirect.to.trivago.from.first.article.in.editor.s.pick.fail.html' target='_blank'>HTML snapshot</a> of a failed page
                 </td>
               </tr>
             </table>
@@ -456,7 +444,7 @@ var showAll = true;
                     Successful scenarios:
                   </td>
                   <td class="scenarioSuccessValue">
-                    <strong>0</strong>
+                    <strong>1</strong>
                   </td>
                 </tr>
                 <tr>
@@ -464,7 +452,7 @@ var showAll = true;
                     Failed scenarios:
                   </td>
                   <td class="scenarioFailedValue">
-                    <strong>1</strong>
+                    <strong>0</strong>
                   </td>
                 </tr>
                 <tr>
