@@ -2,8 +2,7 @@ Feature: room5 redirect comments
 
   Scenario: 01 - room5 test adding comments functionality
 
-    Given user view room5
-    Then verify the availability of the application
+    Given user visits room5
     When user click on main article in editors pick
     Then user should be redirected to correct article
     When user type following in comment section

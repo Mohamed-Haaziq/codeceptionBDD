@@ -2,7 +2,7 @@ Feature: Navigation through menu
 
  Scenario: 01 - Navigate to a destination through the menu on the top left
 
-  Given user view room5
+  Given user visits room5
   Then verify the availability of the application
   When user click menu
   Then menu should be displayed

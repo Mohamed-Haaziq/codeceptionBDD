@@ -5,7 +5,7 @@ namespace Helper;
 use phpDocumentor\Reflection\Types\Null_;
 use Codeception\Lib\Interfaces\Db;
 
-class commonMethod extends \AcceptanceTester
+class Utils extends \AcceptanceTester
 {
     public function readXML($filePath, $parentTag, $childTag, $attributeName)
     {

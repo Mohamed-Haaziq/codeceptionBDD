@@ -33,6 +33,7 @@ class ContextRoom5comments extends \AcceptanceTester
     public function submitComment()
     {
         $this->wait(2);
+        $this->scrollTo(objectMap::$submitComment);
         $this->click(objectMap::$submitComment);
     }
 

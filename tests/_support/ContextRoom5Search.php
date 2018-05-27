@@ -1,14 +1,13 @@
 <?php
 
 require ("resource/objectMap.php");
-require ("resource/dataDictionary.php");
 
 class ContextRoom5Search extends \AcceptanceTester
 {
     protected static $searchString;
 
     /**
-     * @Given user view room5
+     * @Given user visits room5
      */
     public function viewRoom5()
     {
@@ -80,8 +79,7 @@ class ContextRoom5Search extends \AcceptanceTester
 
             for($i=1; $i<= 3; $i++)
             {
-                $_articleNames="//article[@data-index='$i']/a";
-                $articleTitle=$this->grabAttributeFrom($_articleNames,'href');
+                $articleTitle=$this->grabAttributeFrom(objectMap::$articleNames."'".$i."']/a",'href');
                 codecept_debug($articleTitle);
 
                 if (stripos($articleTitle,self::$searchString))

@@ -212,7 +212,7 @@ var showAll = true;
         <a href="#" title="Show all" onclick="showAllScenarios()">◯</a>
       </li>
       <li>
-        <a href="#" title="Successful" onclick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a>
+        <a href="#" title="Successful" onclick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 6</a>
       </li>
       <li>
         <a href="#" title="Failed" onclick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a>
@@ -226,7 +226,7 @@ var showAll = true;
     </ul>
     <div class="layout">
       <h1>
-        Codeception Results <small><span style="color: green">OK</span> (56.3s)</small>
+        Codeception Results <small><span style="color: green">OK</span> (90.8s)</small>
       </h1>
       <table border="0" style="width: 100%;">
         <tr>
@@ -239,7 +239,7 @@ var showAll = true;
         <tr class="scenarioRow scenarioSuccess">
           <td>
             <p class="scenarioSuccess" onclick="showHide('1', this)">
-              <span class="toggle">+</span> <span class="quiet">Room5 redirect to trivago »</span> 01 - room5 redirect to trivago from first article in editor's pick <span style="color: #34495e; font-size: 70%;">56.31s</span>
+              <span class="toggle">+</span> <span class="quiet">Room5 contact form »</span> 01 - Fill contact form <span style="color: #34495e; font-size: 70%;">25.81s</span>
             </p>
           </td>
         </tr>
@@ -253,14 +253,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb3163', this)">
-                    <span class="toggle">+</span> Given user view room5
+                  <p onclick="showHide('5b0a838966635', this)">
+                    <span class="toggle">+</span> Given user visits room5
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb3163">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838966635">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -281,14 +281,215 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb31b5', this)">
+                  <p onclick="showHide('5b0a8389666b5', this)">
+                    <span class="toggle">+</span> When user click on contact form link
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a8389666b5">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">"//*[contains(@href,'contact')]"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//*[contains(@href,'contact')]"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838966713', this)">
+                    <span class="toggle">+</span> And user fills contact form with following details <span style="color: #732E81">| Field | Value | | Message area | Test meesage | | Full name | Haaziq Hamza | | Email | haaziq.hamza@trivago.com |</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838966713">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I switch to next tab
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//textarea[@class='contact-msg']","Test meesage"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//input[@class='contact-input']","Haaziq Hamza"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//input[@id='contact-email']","haaziq.hamza@trivago.com"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838966757', this)">
+                    <span class="toggle">+</span> And user tick the checkbox
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838966757">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//input[@id='confirm']"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838966796', this)">
+                    <span class="toggle">+</span> And user submit the contact form
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838966796">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">"//button[@class='contact-submit']"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">2</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//button[@class='contact-submit']",30</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//button[@class='contact-submit']"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a8389667da', this)">
+                    <span class="toggle">+</span> Then user receives successful submission notification
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a8389667da">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//p[@class='feedback']",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <p class="scenarioSuccess" onclick="showHide('2', this)">
+              <span class="toggle">+</span> <span class="quiet">Navigation through menu »</span> 01 - Navigate to a destination through the menu on the top left <span style="color: #34495e; font-size: 70%;">6.23s</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+              <tr>
+                <td class="stepName">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838f9e33b', this)">
+                    <span class="toggle">+</span> Given user visits room5
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e33b">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">""</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838f9e380', this)">
                     <span class="toggle">+</span> Then verify the availability of the application
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb31b5">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e380">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -304,14 +505,152 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb31f3', this)">
+                  <p onclick="showHide('5b0a838f9e3b9', this)">
+                    <span class="toggle">+</span> When user click menu
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e3b9">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//div[@id='app']/div/header/div/div/div"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838f9e3fa', this)">
+                    <span class="toggle">+</span> Then menu should be displayed
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e3fa">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//a[contains(.,'Destination')]",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838f9e434', this)">
+                    <span class="toggle">+</span> When user click on "midwest"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e434">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//a[contains(.,'Midwest')]"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a838f9e475', this)">
+                    <span class="toggle">+</span> Then user should be redirected to correct destination
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a838f9e475">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//h1[contains(.,'Midwest')]",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <p class="scenarioSuccess" onclick="showHide('3', this)">
+              <span class="toggle">+</span> <span class="quiet">Room5 redirect comments »</span> 01 - room5 test adding comments functionality <span style="color: #34495e; font-size: 70%;">11.66s</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+              <tr>
+                <td class="stepName">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a839b4b413', this)">
+                    <span class="toggle">+</span> Given user visits room5
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b413">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">""</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a839b4b469', this)">
                     <span class="toggle">+</span> When user click on main article in editors pick
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb31f3">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b469">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -332,14 +671,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb3230', this)">
+                  <p onclick="showHide('5b0a839b4b4b1', this)">
                     <span class="toggle">+</span> Then user should be redirected to correct article
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb3230">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b4b1">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -360,14 +699,205 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb326e', this)">
+                  <p onclick="showHide('5b0a839b4b522', this)">
+                    <span class="toggle">+</span> When user type following in comment section <span style="color: #732E81">| Field | Value | | Message area | Test comment | | Email | haaziq.hamza@trivago.com | | Full name | Haaziq Hamza |</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b522">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//textarea[@class='comment-text']","Test comment"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//input[@class='commenter-email']","haaziq.hamza@trivago.com"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//input[@class='commenter-name']","Haaziq Hamza"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a839b4b590', this)">
+                    <span class="toggle">+</span> And user submit the comment
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b590">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">2</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">"//button[@class='submit-comment']"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//button[@class='submit-comment']"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a839b4b5e3', this)">
+                    <span class="toggle">+</span> Then comment should be succesully added
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a839b4b5e3">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//div[@class='feedback-ok']",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <p class="scenarioSuccess" onclick="showHide('4', this)">
+              <span class="toggle">+</span> <span class="quiet">Room5 redirect to trivago »</span> 01 - room5 redirect to trivago from first article in editor's pick <span style="color: #34495e; font-size: 70%;">26.81s</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+              <tr>
+                <td class="stepName">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83b61cb96', this)">
+                    <span class="toggle">+</span> Given user visits room5
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83b61cb96">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">""</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83b61cbf7', this)">
+                    <span class="toggle">+</span> When user click on main article in editors pick
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83b61cbf7">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">"//article[@class='post row' and @data-index='1']/div/p/a"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//article[@class='post row' and @data-index='1']/div/p/a"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83b61cc37', this)">
+                    <span class="toggle">+</span> Then user should be redirected to correct article
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83b61cc37">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//h1",30</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">"//h1"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83b61cc78', this)">
                     <span class="toggle">+</span> When user click on first view resort button in the article
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb326e">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83b61cc78">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -393,14 +923,14 @@ var showAll = true;
               </tr>
               <tr>
                 <td class="stepName">
-                  <p onclick="showHide('5b084febb32af', this)">
+                  <p onclick="showHide('5b0a83b61ccc4', this)">
                     <span class="toggle">+</span> Then user should be redirected to correct hotel in trivago search page
                   </p>
                 </td>
               </tr>
               <tr>
                 <td class="nostyle">
-                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b084febb32af">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83b61ccc4">
                     <tr>
                       <td class="stepName">
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -432,6 +962,358 @@ var showAll = true;
             </table>
           </td>
         </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <p class="scenarioSuccess" onclick="showHide('5', this)">
+              <span class="toggle">+</span> <span class="quiet">Room5 search »</span> 01 - Search for any location on Room5 by using the search bar <span style="color: #34495e; font-size: 70%;">10.96s</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
+              <tr>
+                <td class="stepName">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c113278', this)">
+                    <span class="toggle">+</span> Given user visits room5
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c113278">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">""</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c1132c6', this)">
+                    <span class="toggle">+</span> Then verify the availability of the application
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c1132c6">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//h2[contains(.,"Editor's Pick")]",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c1132ff', this)">
+                    <span class="toggle">+</span> When user click on search icon
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c1132ff">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">".search-icon",30</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">".search-icon"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"input.input",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c113339', this)">
+                    <span class="toggle">+</span> And user type "sri lanka" in the search bar
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c113339">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"input.input","Sri Lanka"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c11336c', this)">
+                    <span class="toggle">+</span> And press enter
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c11336c">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">"input.input",""</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83c1133a5', this)">
+                    <span class="toggle">+</span> Then user should be able to see related articles
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83c1133a5">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">"h1.section-title"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <p class="scenarioSuccess" onclick="showHide('6', this)">
+              <span class="toggle">+</span> <span class="quiet">Subscribe to the Newsletter »</span> 01 - Subscribe to the Newsletter <span style="color: #34495e; font-size: 70%;">9.32s</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="scenarioRow scenarioSuccess">
+          <td>
+            <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+              <tr>
+                <td class="stepName">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca615d7', this)">
+                    <span class="toggle">+</span> Given user visits room5
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca615d7">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">""</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca6162a', this)">
+                    <span class="toggle">+</span> Then verify the availability of the application
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca6162a">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//h2[contains(.,"Editor's Pick")]",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca61681', this)">
+                    <span class="toggle">+</span> When user tick checkbox
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca61681">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//input[@id='confirm']",30</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">"//input[@id='confirm']"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">2</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//input[@id='confirm']"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca616be', this)">
+                    <span class="toggle">+</span> And user input email id "haaziq.hamza@trivago.com"
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca616be">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">"//input[@name='email']","haaziq.hamza@trivago.com"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca616f6', this)">
+                    <span class="toggle">+</span> And user click on inspire me button
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca616f6">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">"//button[@class='submit']"</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="stepName">
+                  <p onclick="showHide('5b0a83ca61733', this)">
+                    <span class="toggle">+</span> Then notification should be visible saying user has subscribed
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="nostyle">
+                  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer5b0a83ca61733">
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="stepName">
+                        &nbsp;&nbsp;&nbsp;&nbsp;I wait for element visible <span style="color: #732E81">"//p[@class='submitted'][contains(.,'You are now checked-in!')]",30</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
         <tr>
           <td>
             <h2>
@@ -444,7 +1326,7 @@ var showAll = true;
                     Successful scenarios:
                   </td>
                   <td class="scenarioSuccessValue">
-                    <strong>1</strong>
+                    <strong>6</strong>
                   </td>
                 </tr>
                 <tr>

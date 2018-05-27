@@ -10,6 +10,7 @@ class objectMap
     public static $searchBar="input.input";
     public static $articleExists ="h1.section-title";
     public static $articleNotExists ="div.container-wide:nth-child(3) > h3:nth-child(1)";
+    public static $articleNames="//article[@data-index=";
 
     //locators in ContextRoom5ContactForm.php
     public static $linkToContactForm="//*[contains(@href,'contact')]";
@@ -17,6 +18,8 @@ class objectMap
     public static $contactFormName="//input[@class='contact-input']";
     public static $contactFormEmail="//input[@id='contact-email']";
     public static $submitButton="//button[@class='contact-submit']";
+    public static $checkBoxContactForm="//input[@id='confirm']";
+    public static $notificationForm="//p[@class='feedback']";
 
     //locators in ContextRoom5subscribe.php
     public static $subscribeCheckBox="//input[@id='confirm']";
@@ -42,6 +45,8 @@ class objectMap
     public static $commenttFormEmail="//input[@class='commenter-name']";
     public static $submitComment="//button[@class='submit-comment']";
     public static $commentValidationMessage="//div[@class='feedback-ok']";
+
+    //public static $_articleNames="//article[@data-index='$i']/a";
 
 }
 

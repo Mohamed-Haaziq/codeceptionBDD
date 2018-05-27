@@ -39,11 +39,30 @@ class ContextRoom5ContactForm extends \AcceptanceTester
     }
 
     /**
-     * @Then user submit the form
+     * @When user tick the checkbox
+     */
+    public function clickOncheckBox()
+    {
+        $this->click(objectMap::$checkBoxContactForm);
+    }
+
+    /**
+     * @When user submit the contact form
      */
     public function submitForm()
     {
+        $this->scrollTo(objectMap::$submitButton);
+        $this->wait(2);
+        $this->waitForElementVisible(objectMap::$submitButton,30);
         $this->click(objectMap::$submitButton);
+    }
+
+    /**
+     * @Then user receives successful submission notification
+     */
+    public function recieveNotification()
+    {
+        $this->waitForElementVisible(objectMap::$notificationForm,30);
     }
 
 
