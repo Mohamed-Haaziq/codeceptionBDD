@@ -1,16 +1,8 @@
-#actor: ApiTester
-#modules:
- #   enabled:
-  #      - REST:
-   #         url: https://api.trivago.com/webservice/hotelmanager/campaigns/1
-    #        depends: PhpBrowser
-     #       part: Json
-      #  - Db
 
 class_name: ApiTester
 modules:
   enabled: [REST, PhpBrowser]
   config:
     REST:
-      #url: https://api.trivago.com/webservice/hotelmanager/campaigns/1
+      #url: http://room5.trivago.com/
       depends: PhpBrowser

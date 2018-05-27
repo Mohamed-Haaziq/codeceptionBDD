@@ -45,9 +45,6 @@ class objectMap
     public static $commenttFormEmail="//input[@class='commenter-name']";
     public static $submitComment="//button[@class='submit-comment']";
     public static $commentValidationMessage="//div[@class='feedback-ok']";
-
-    //public static $_articleNames="//article[@data-index='$i']/a";
-
 }
 
 ?>

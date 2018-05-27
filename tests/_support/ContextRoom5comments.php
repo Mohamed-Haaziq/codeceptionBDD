@@ -3,6 +3,7 @@
 class ContextRoom5comments extends \AcceptanceTester
 {
     /**
+     * This method is to give input into comment section
      * @When user type following in comment section
      */
     public function typeInCommentSection(\Behat\Gherkin\Node\TableNode $table)
@@ -28,6 +29,7 @@ class ContextRoom5comments extends \AcceptanceTester
     }
 
     /**
+     * This method is to submit the comment
      * @When user submit the comment
      */
     public function submitComment()
@@ -38,7 +40,8 @@ class ContextRoom5comments extends \AcceptanceTester
     }
 
     /**
-     * @Then comment should be succesully added
+     * This method is to validate the successful submission of the comment
+     * @Then comment should be successfully added
      */
     public function validateAddingComment()
     {

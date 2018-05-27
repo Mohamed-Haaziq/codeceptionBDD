@@ -3,6 +3,7 @@
 class ContextRoom5ContactForm extends \AcceptanceTester
 {
     /**
+     * This method is to invoke contact page
      * @When user click on contact form link
      */
     public function clickOnContactForm()
@@ -12,6 +13,7 @@ class ContextRoom5ContactForm extends \AcceptanceTester
     }
 
     /**
+     * This method is to fill contact form
      * @When user fills contact form with following details
      */
     public function fillContactForm(\Behat\Gherkin\Node\TableNode $table)
@@ -39,6 +41,7 @@ class ContextRoom5ContactForm extends \AcceptanceTester
     }
 
     /**
+     * This method is to tick checkbox in contact page
      * @When user tick the checkbox
      */
     public function clickOncheckBox()
@@ -47,6 +50,7 @@ class ContextRoom5ContactForm extends \AcceptanceTester
     }
 
     /**
+     * This method is to submit contact form
      * @When user submit the contact form
      */
     public function submitForm()
@@ -58,14 +62,13 @@ class ContextRoom5ContactForm extends \AcceptanceTester
     }
 
     /**
+     * This method is to validate successful contact form submission
      * @Then user receives successful submission notification
      */
     public function recieveNotification()
     {
         $this->waitForElementVisible(objectMap::$notificationForm,30);
     }
-
-
 }
 
 ?>

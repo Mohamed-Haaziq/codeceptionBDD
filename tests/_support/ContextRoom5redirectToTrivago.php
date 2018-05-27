@@ -7,6 +7,7 @@ class ContextRoom5redirectToTrivago extends \AcceptanceTester
     public static $firstHotelNameInArticle;
 
     /**
+     * This method is to click on main article in editor's pick
      * @When user click on main article in editors pick
      */
     public function clickOnMainArticleInEditorPick()
@@ -17,6 +18,7 @@ class ContextRoom5redirectToTrivago extends \AcceptanceTester
     }
 
     /**
+     * This method is to view article
      * @Then user should be redirected to correct article
      */
     public function validateRedirectionToMainArticle()
@@ -38,6 +40,7 @@ class ContextRoom5redirectToTrivago extends \AcceptanceTester
     }
 
     /**
+     * This method is to click on first view resort button in article
      * @When user click on first View Resort button in the article
      */
     public function clickOnViewResort()
@@ -49,6 +52,7 @@ class ContextRoom5redirectToTrivago extends \AcceptanceTester
     }
 
     /**
+     * This method is to redirect to trivago for selected hotel
      * @Then user should be redirected to correct hotel in trivago search page
      */
     public function redirectionToTrivago()

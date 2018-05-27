@@ -5,6 +5,7 @@ class ContextRoom5Navigation extends \AcceptanceTester
     public static $destination;
 
     /**
+     * This method is to click on Menu icon in header
      * @When user click menu
      */
     public function clickOnMenu()
@@ -13,6 +14,7 @@ class ContextRoom5Navigation extends \AcceptanceTester
     }
 
     /**
+     * This method is to validate the availability of the menu
      * @Then menu should be displayed
      */
     public function checkAvailabilityOfMenu()
@@ -21,6 +23,7 @@ class ContextRoom5Navigation extends \AcceptanceTester
     }
 
     /**
+     * This method is to click on destination in menu
      * @When user click on :destination
      */
     public function clickOnDestination($destination)
@@ -31,6 +34,7 @@ class ContextRoom5Navigation extends \AcceptanceTester
     }
 
     /**
+     * This method is to redirect user to correct destination articles
      * @Then user should be redirected to correct destination
      */
     public function redirectToDestination()

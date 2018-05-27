@@ -7,6 +7,7 @@ class ContextRoom5Search extends \AcceptanceTester
     protected static $searchString;
 
     /**
+     * This method is to view room5
      * @Given user visits room5
      */
     public function viewRoom5()
@@ -18,6 +19,7 @@ class ContextRoom5Search extends \AcceptanceTester
     }
 
     /**
+     * This method is to verify the availability of room5
      * @Then verify the availability of the application
      */
     public function verifyRedirectionToMainPage()
@@ -26,6 +28,7 @@ class ContextRoom5Search extends \AcceptanceTester
     }
 
     /**
+     * This method is to click on search icon
      * @When user click on search icon
      */
     public function userClickSearchIcon()
@@ -38,6 +41,7 @@ class ContextRoom5Search extends \AcceptanceTester
     }
 
     /**
+     * This method is to search articles
      * @When user type :searchString in the search bar
      */
     public function typeStringInSearchBar($searchString)
@@ -48,6 +52,7 @@ class ContextRoom5Search extends \AcceptanceTester
 
 
     /**
+     * This method is to press enter in article search
      * @When press enter
      */
     public function pressEnter()
@@ -56,6 +61,7 @@ class ContextRoom5Search extends \AcceptanceTester
     }
 
     /**
+     * This method is to validate search results
      * @Then user should be able to see related articles
      */
     public function seeArticles()
